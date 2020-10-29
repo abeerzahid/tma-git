@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Passero+One&display=swap");
+@import "./variables.scss";
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $OnPrimary;
+}
+
+.navbar-dark .navbar-brand {
+  font-family: "Passero One", cursive;
+  color: $Secondary;
+  font-size: 26px;
+  padding: 0;
+}
+
+section {
+  padding: 100px 0;
+}
+
+
+.text-secondary {
+  color: $Secondary !important;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: $Background;
+  padding-top: $NavbarHeight;
+}
+
+.main-wrapper {
+  padding: 56px 0;
+}
+
+h1,
+h2 {
+  font-family: "Passero One", cursive;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  color: $Secondary;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+header {
+  padding: 60px 0;
+  background-color: $Secondary;
+  background-image: url('/images/banner.jpeg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  color: white;
+
+  h1 {
+    margin-bottom: 20px;
+    color: $Gray-20;
+  }
+}
+
+.left-text {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-top: 50px;
+}
+
+.img-button {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-search:hover {
+  color: $Secondary;
+  background-color: #f1f1f1;
+  border-color: $Secondary;
+}
+
+.content img {
+  max-height: 250px;
+  width: auto;
+}
+
+
+
+.section-gallery {
+  background-color: white;
+
+  .row>.col,
+  .row>[class*=col-] {
+    margin-bottom: 28px;
+  }
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  padding: 20px;
+
+  h5 {
+    color: $Secondary;
+    text-align: center;
+  }
+
+  img {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+
+  a {
+    margin-top: auto;
+  }
+
+}
+
+hr {
+  border-color: $Secondary;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+// .main-section {
+//   padding: 156px 0 100px;
+// }
+
+.single-content {
+  background-color: #ffffff;
+  color: #212529;
+  padding: 26px;
+  border-radius: 10px;
+  margin-bottom: 28px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 3px 1px #0000001f;
+  }
+
+  img {
+    max-height: 160px;
+    width: auto;
+  }
+}
+
+i {
+  font-size: 20px;
+  color: $Secondary;
+}
+
+.single-product img {
+  max-height: 350px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+#root>div:not(.footer) {
+  flex: 1 0 auto;
+}
+
+.section-about {
+  p {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .content-inner {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+  }
+
+  li {
+    margin: 12px 0;
+  }
+}
+
+.footer {
+  p {
+    font-size: 12px;
+  }
+}
+
+.single-product {
+  .col-details {
+    background: white;
+    padding: 30px;
+  }
+}
+
+.input-search {
+  box-shadow: none !important;
+  height: 48px;
+
+  &:focus {
+    border-color: $Gray-60;
+  }
+
+  &::placeholder {
+    color: $Gray-40;
+  }
+}
+
+.animateX {
+  animation-name: animateX;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternative;
+}
+
+@keyframes animateX {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

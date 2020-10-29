@@ -1,0 +1,43 @@
+//Create solid color shades by reducing opacity
+@function lighten-alpha($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  @return mix(
+    rgb(red($rgba), green($rgba), blue($rgba)),
+    #ffffff,
+    alpha($rgba) * 100%
+  );
+}
+
+$Primary: #343a40 !default;
+$Primary-90: lighten-alpha($Primary, 0.9);
+$Primary-80: lighten-alpha($Primary, 0.8);
+$Primary-70: lighten-alpha($Primary, 0.7);
+$Primary-60: lighten-alpha($Primary, 0.6);
+$Primary-40: lighten-alpha($Primary, 0.4);
+$Primary-20: lighten-alpha($Primary, 0.2);
+$Primary-10: lighten-alpha($Primary, 0.1);
+$OnPrimary: #ffffff !default;
+
+$Secondary: #e2b13c !default;
+$Secondary-90: lighten-alpha($Secondary, 0.9);
+$Secondary-80: lighten-alpha($Secondary, 0.8);
+$Secondary-70: lighten-alpha($Secondary, 0.7);
+$Secondary-60: lighten-alpha($Secondary, 0.6);
+$Secondary-40: lighten-alpha($Secondary, 0.4);
+$Secondary-20: lighten-alpha($Secondary, 0.2);
+$Secondary-10: lighten-alpha($Secondary, 0.1);
+$OnSecondary: #ffffff !default;
+
+$Gray: #37474f !default;
+$Gray-80: #5f6c72 !default;
+$Gray-60: #879195 !default;
+$Gray-40: #afb5b9 !default;
+$Gray-30: #c2c7ca !default;
+$Gray-20: #d7dadc !default;
+$Gray-10: #ebeced !default;
+$Gray-05: #f5f6f6 !default;
+
+$Background: #f9fafc !default;
+$OnBackground: $Primary !default;
+
+$NavbarHeight: 56px;
