@@ -17,7 +17,7 @@ class App extends Component {
           <Navigation />
           <Switch>
             <Route path={"/"} component={Home} exact />
-            <Route path={"/singleproduct"} component={SingleProduct} />
+            <Route path={"/singleproduct/:id"} component={SingleProduct} />
             <Route path={"/allproducts"} component={AllProducts} />
           </Switch>
         </div>
